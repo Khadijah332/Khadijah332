@@ -2,11 +2,23 @@
 <html>
   <head>
       <style>
-         body {background-color: #e1e2ed;}
-         h1   {color: #654597;}
-         p    {color: #ab81cd;}
+        /* Initial Styling of header*/
+        header{ 
+          h1   {color: #654597;}
+          p    {color: #ab81cd;}
+        }  
+
+        /* Wanted Styling While Fixed */
+         header.fixed{
+         position:fixed;
+         top:0;
+         z-index:100;
+        }   
+       
         
         *{
+         body {background-color: #e1e2ed;
+           
          margin: 20px;
           }
         
@@ -33,12 +45,11 @@
   <h1>Billa's Page </h1>
 <p>I'm hosted with GitHub Pages.</p>
   <br> 
-    
-    <aside>
+  </header>
+  
+  <aside>
          <p> Click the buttons below to explore! </p>
     </aside>
-
-  </header>
 
 <div class="subheadings">
 <body>
