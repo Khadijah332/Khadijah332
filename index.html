@@ -2,23 +2,12 @@
 <html>
   <head>
       <style>
-        /* Initial Styling of header*/
-        header{ 
-          h1   {color: #654597;}
-          p    {color: #ab81cd;}
-        }  
-
-        /* Wanted Styling While Fixed */
-         header.fixed{
-         position:fixed;
-         top:0;
-         z-index:100;
-        }   
        
-        
+      body {background-color: #e1e2ed;}
+      h1   {color: #654597;}
+      p    {color: #ab81cd;}
+          
         *{
-         body {background-color: #e1e2ed;
-           
          margin: 20px;
           }
         
@@ -30,7 +19,7 @@
           padding: 20px }
         
         aside {
-          width: 25%;
+         width: 25%;
          padding-left: 15px;
          margin-left: 15px;
          float: right;
@@ -38,24 +27,6 @@
          background-color: lightgray;
               }
     </style>
-    
-    <script>
-// On Scroll
-$(window).scroll(function(){
-    // If we have scrolled more than 10px
-    if($(document).scrollTop() > 10){
-        // Add class "fixed" to header element
-        $('header').addClass('fixed');
-    // Otherwise
-    }else{
-        // If header already has "fixed" class
-        if($('header').hasClass('fixed')){
-            // Remove said class
-            $('header').removeClass('fixed');
-        }
-    }
-});
-</script>
 
     
   </head>
